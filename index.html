@@ -104,7 +104,7 @@
             $("header").load("nav.html");
         });
 
-        fetch('https://api.lieuweberg.com/membercount/info')
+        fetch("https://cors-anywhere.herokuapp.com/" + "https://api.lieuweberg.com/membercount/info")
             .then(res => res.json())
             .then(json => document.getElementById("serverCount").innerHTML = json.server_count);
     </script>
