@@ -4,17 +4,21 @@
 	color: #73c3ab;
 	border-color: #73c3ab;
 }
+
 .btn-outline-primary:hover {
 	background-color: #73c3ab;
 	border-color: #73c3ab;
 }
+
 .navbar-dark {
 	background-color: #23272a;
 }
+
 body {
 	color: white;
 	background-color: #2c2f33;
 }
+
 .bg {
   animation: slide 3s ease-in-out infinite alternate;
   background-image: linear-gradient(-60deg, #daa520 50%, #dc143c 50%);
@@ -27,15 +31,18 @@ body {
   overflow: hidden;
   z-index: -1;
 }
+
 .bg2 {
   animation-direction: alternate-reverse;
   animation-duration: 4s;
   top: -100vh;
 }
+
 .bg3 {
   animation-duration: 5s;
   top: -200vh;
 }
+
 @keyframes slide {
   0% {
     transform: translateX(-25%);
@@ -43,4 +50,17 @@ body {
   100% {
     transform: translateX(25%);
   }
+}
+
+.btn-info {
+    background-color: #1bb4cc;
+    border-color: #1bb4cc;
+}
+
+body img {
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    -o-user-select: none;
+    user-select: none;          
 }
