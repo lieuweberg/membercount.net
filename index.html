@@ -29,7 +29,7 @@
             <div style="margin: 4em 0 0 0; align-items: center; display: flex; flex-direction: column;">
                 <img src="assets/logo.png" width="15%" height="15%" alt="Member Count">
 		        <h1 style="margin: 0.5em 0">Member Count</h1>
-		        <h3 style="font-weight: 500; letter-spacing: 0.1em; line-height: 1.5em; text-align: center;">Managing server stats<br>with channel names<br>in <b>999999</b> guilds</h3>
+		        <h3 style="font-weight: 500; letter-spacing: 0.1em; line-height: 1.5em; text-align: center;">Managing server stats<br>with channel names<br>in <span id="serverCount" style="font-weight: bold;">999999</span> guilds</h3>
             </div>
             <div style="text-align: center;">
                 <a class="btn btn-primary btn-lg" href="https://discordapp.com/api/oauth2/authorize?client_id=432533456807919639&permissions=8&scope=bot" style="display: inline-block; margin: 1em;"><b>+</b> Invite Bot</a>
@@ -103,6 +103,10 @@
         $(function() {
             $("header").load("nav.html");
         });
+
+        fetch('https://api.lieuweberg.com/membercount/info')
+            .then(res => res.json())
+            .then(json => document.getElementById("serverCount").innerHTML = json.server_count);
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
