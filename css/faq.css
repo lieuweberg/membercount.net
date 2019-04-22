@@ -14,6 +14,10 @@ code {
 	background-color: #343a40;
 }
 
+.btn {
+	text-align: left;
+}
+
 .btn-link {
 	color: white;
 }
