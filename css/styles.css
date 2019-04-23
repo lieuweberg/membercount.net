@@ -1,22 +1,26 @@
 
 .btn-outline-primary {
-	font-weight: 500;
-	color: #73c3ab;
-	border-color: #73c3ab;
+  font-weight: 500;
+  color: #73c3ab;
+  border-color: #73c3ab;
 }
 
-.btn-outline-primary:hover {
-	background-color: #73c3ab;
-	border-color: #73c3ab;
+.btn-outline-primary:hover, .btn-outline-primary:active {
+  background-color: #73c3ab !important;
+  border-color: #73c3ab !important;
+}
+
+.btn-outline-primary:focus {
+  box-shadow: none !important;
 }
 
 .navbar-dark {
-	background-color: #23272a;
+  background-color: #23272a;
 }
 
 body {
-	color: white;
-	background-color: #2c2f33;
+  color: white;
+  background-color: #2c2f33;
 }
 
 .bg {
