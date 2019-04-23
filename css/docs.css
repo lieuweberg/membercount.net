@@ -14,12 +14,18 @@ code {
 	background-color: #343a40;
 }
 
-.btn {
+.card-header .btn {
 	text-align: left;
+	height: 100%;
+	width: 100%;
 }
 
 .btn-link {
 	color: white;
+}
+
+.btn-link .card {
+	margin: 2em 0;
 }
 
 .btn-link:hover, .btn-link:focus {
