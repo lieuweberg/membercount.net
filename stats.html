@@ -71,7 +71,7 @@
 
                 let shards = 0;
                 json.clusters.forEach(i => {
-                    $("#clusters").append(`<div class="col-6 col-md-4 col-lg-3" style="margin: 0.5em 0; padding: 0 0.5em;"><div class="card bg-dark"><div class="card-body"><h5 class="card-title" style="text-align: center;">Cluster ${i.cluster}</h5><br><p><b>Shard</b> ${shards}-${shards + i.shards - 1}<br><b>Guilds</b> ${numberFormat(i.guilds)}<br><b>Uptime</b> ${(i.uptime / 3600000).toFixed(2)} hr(s)<br><b>Memory</b> ${(i.ram * 1000000 / 1048576).toFixed(2)}MB</p></div></div></div>`);
+                    $("#clusters").append(`<div class="col-6 col-md-4 col-lg-3" style="margin: 0.5em 0; padding: 0 0.5em;"><div class="card bg-dark" style="height: 100%;"><div class="card-body"><h5 class="card-title" style="text-align: center;">Cluster ${i.cluster}</h5><br><p><b>Shard</b> ${shards}-${shards + i.shards - 1}<br><b>Guilds</b> ${numberFormat(i.guilds)}<br><b>Uptime</b> ${(i.uptime / 3600000).toFixed(2)} hr(s)<br><b>Memory</b> ${(i.ram * 1000000 / 1048576).toFixed(2)}MB</p></div></div></div>`);
                     shards += i.shards;
                 })
             });
