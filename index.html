@@ -62,7 +62,7 @@
             <div class="col-lg-7">
                 <div class="card bg-dark text-right">
                     <div class="card-body">
-                        <h3 class="title">Fancy Counting</h3>
+                        <h3 class="card-title">Fancy Counting</h3>
                         <br>
                         <p class="card-text">Cosmetic counters, aesthetically pleasing for both you and your server members. The counters automatically update so you can focus on the management of your server.</p>
                     </div>
@@ -80,7 +80,7 @@
             <div class="col-lg-7">
                 <div class="card bg-dark text-left">
                     <div class="card-body">
-                        <h3 class="title">Easy Setup</h3>
+                        <h3 class="card-title">Easy Setup</h3>
                         <br>
                         <p class="card-text">Only one command is needed for the setup of this bot, <code>m!setup</code>. This command also reverts all the settings to the default values when you want to quickly reset them.</p>
                     </div>
@@ -92,7 +92,7 @@
             <div class="col-lg-7">
                 <div class="card bg-dark text-right">
                     <div class="card-body">
-                        <h3 class="title">Configurable</h3>
+                        <h3 class="card-title">Configurable</h3>
                         <br>
                         <p class="card-text">Want to turn a counter off? Want to change the name of a counter? Feel free to do so! All of the commands can be viewed from the help menu, with the command <code>m!help</code>.</p>
                     </div>
@@ -134,9 +134,9 @@
             $("header").load("nav.html");
         });
 
-        fetch("https://cors-anywhere.herokuapp.com/" + "https://api.lieuweberg.com/membercount/info")
+        fetch("https://membercount-api.glitch.me/stats")
             .then(res => res.json())
-            .then(json => document.getElementById("serverCount").innerHTML = json.server_count);
+            .then(json => document.getElementById("serverCount").innerHTML = json.guilds);
     </script>
 
     <!-- Google Analytics -->
