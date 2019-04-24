@@ -61,7 +61,6 @@
 
         $.get("changelog.md", function(data) {
             let content = marked(data, { headerIds: false });
-            console.log(content);
             content = content.split('<hr>');
 
             content.forEach(i => {
