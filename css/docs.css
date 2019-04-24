@@ -16,8 +16,12 @@
     margin: 2em 0;
 }
 
-.getting-started .card {
+.cards .card {
     margin: 2em 0;
+}
+
+.cards .card img {
+    max-width: 100%;
 }
 
 .btn-link:hover, .btn-link:focus {
