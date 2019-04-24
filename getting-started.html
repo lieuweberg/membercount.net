@@ -29,20 +29,56 @@
     <header>
         
     </header>
-    <div class="container">
+    <div class="container getting-started">
         <h2 style="text-align: center; margin: 4em 0 2em 0;">GETTING STARTED</h2>
-        <h3>Setup</h3>
-        <ol>
-            <li>Invite the bot with this <a href="https://discordapp.com/api/oauth2/authorize?client_id=432533456807919639&permissions=8&scope=bot">link</a>. Be sure to give it the <code>Administrator</code> permission.</li>
-            <li>Type <code>m!setup</code>.</li>
-        </ol>
-        <p>With simply two steps, the setup for Member Count is done.</p>
-        <h5>Options</h5>
-        <p>You can enable and disable certain counters with the following commands.<br><br>Member count: <code>m!counter members &lt;on/off&gt;</code><br>User count: <code>m!counter users &lt;on/off&gt;</code><br>Bot count: <code>m!counter bots &lt;on/off&gt;</code><br>Role count: <code>m!counter roles &lt;on/off&gt;</code><br>Channel count: <code>m!counter channels &lt;on/off&gt;</code><br>Members in role count: <code>m!counter role &lt;add/remove&gt; &lt;role&gt;</code><br>Online count: <code>m!counter online &lt;on/off&gt;</code><br>Offline count: <code>m!counter offline &lt;on/off&gt;</code><br><br>More information on this can be found on the <a href="commands">commands</a> page.</p>
-        <h3>Support</h3>
-        <p>If you have issues with the bot, check out the various pages in this documentation first. Feel free to get additional help on our <a href="https://discord.gg/dWMgWWw">support server</a> if you do not find a solution here.</p>
-        <h3>Suggestions</h3>
-        <p>To make suggestions, head down to our <a href="https://discord.gg/dWMgWWw">support server</a> and share your suggestions in the #suggestions channel.</p>
+        <div class="card bg-dark">
+            <div class="card-body">
+                <h3 class="card-title">Setup</h3>
+                <br>
+                <p class="card-text">To setup Member Count, only two simple steps are needed.</p>
+                <ol class="card-text">
+                    <li>Invite the bot with this <a href="https://discordapp.com/api/oauth2/authorize?client_id=432533456807919639&permissions=8&scope=bot">link</a>. Be sure to give it the <code>Administrator</code> permission.</li>
+                    <li>Type <code>m!setup</code>.</li>
+                </ol>
+                <h5 class="card-title">Options</h5>
+                <p class="card-text">
+                    You can enable and disable certain counters with the following commands.
+                    <br>
+                    Member count: <code>m!counter members &lt;on/off&gt;</code>
+                    <br>
+                    User count: <code>m!counter users &lt;on/off&gt;</code>
+                    <br>
+                    Bot count: <code>m!counter bots &lt;on/off&gt;</code>
+                    <br>
+                    Role count: <code>m!counter roles &lt;on/off&gt;</code>
+                    <br>
+                    Channel count: <code>m!counter channels &lt;on/off&gt;</code>
+                    <br>
+                    Members in role count: <code>m!counter role &lt;add/remove&gt; &lt;role&gt;</code>
+                    <br>
+                    Online count: <code>m!counter online &lt;on/off&gt;</code>
+                    <br>
+                    Offline count: <code>m!counter offline &lt;on/off&gt;</code>
+                    <br>
+                    <br>
+                    More information on this can be found on the <a href="commands">commands</a> page.
+                </p>
+            </div>
+        </div>
+        <div class="card bg-dark">
+            <div class="card-body">
+                <h3 class="card-title">Support</h3>
+                <br>
+                <p class="card-text">If you have issues with the bot, check out the various pages in this documentation first. Feel free to get additional help on our <a href="https://discord.gg/dWMgWWw">support server</a> if you do not find a solution here.</p>
+            </div>
+        </div>
+        <div class="card bg-dark">
+            <div class="card-body">
+                <h3 class="card-title">Suggestions</h3>
+                <br>
+                <p class="card-text">To make suggestions, head down to our <a href="https://discord.gg/dWMgWWw">support server</a> and share your suggestions in the #suggestions channel.</p>
+            </div>
+        </div>
     </div>
 
     <div style="background-color: #23272a; margin-top: 4em; padding: 1em 0;">
@@ -50,12 +86,6 @@
             <p>©2018-2019 lieuwe_berg and CHamburr</p>
         </footer>
     </div>
-
-    <script>
-        $(function() {
-            $("header").load("nav.html");
-        });
-    </script>
 
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129600306-2"></script>
@@ -69,5 +99,10 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+        $(function() {
+            $("header").load("nav.html");
+        });
+    </script>
 </body>
 </html>

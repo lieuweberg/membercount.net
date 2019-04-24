@@ -14,11 +14,12 @@
     <meta property="og:description" content="The official website for the Member Count Discord bot.">
     <meta property="og:image" content="https://cdn.glitch.com/8e3492ef-dd7b-4c65-b27c-f566f0ed1254%2FPfP.png">
 
-    <title>Stats | Member Count</title>
+    <title>Changelog | Member Count</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="icon" href="assets/logo.png" type="image/x-icon">
 
+    <link rel="stylesheet" href="css/docs.css">
     <link rel="stylesheet" href="css/styles.css">
     
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
@@ -28,26 +29,9 @@
     <header>
         
     </header>
-    <div class="container">
-        <h2 style="text-align: center; margin: 4em 0 2em 0;">STATISTICS</h2>
-        <div class="row" style="text-align: center;">
-            <div class="col-4">
-                <h5>Guilds</h5>
-                <br>
-                <p id="guilds"></p>
-            </div>
-            <div class="col-4">
-                <h5>Users</h5>
-                <br>
-                <p id="users"></p>
-            </div>
-            <div class="col-4">
-                <h5>Memory</h5>
-                <br>
-                <p id="memory"></p>
-            </div>
-        </div>
-        <div class="row" id="clusters" style="margin-top: 4em;">
+    <div class="container getting-started">
+        <h2 style="text-align: center; margin: 4em 0 2em 0;">CHANGELOG</h2>
+        <div id="content">
         </div>
     </div>
 
@@ -66,7 +50,8 @@
 
         gtag('config', 'UA-129600306-2');
     </script>
-
+    
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script>
@@ -74,26 +59,17 @@
             $("header").load("nav.html");
         });
 
-        fetch("https://membercount-api.glitch.me/stats")
-            .then(res => res.json())
-            .then(json => {
-                document.getElementById("guilds").innerHTML = numberFormat(json.guilds);
-                document.getElementById("users").innerHTML = numberFormat(json.users);
-                document.getElementById("memory").innerHTML = (json.totalRam * 1000000 / 1048576 / 1024).toFixed(2) + "GB";
+        $.get("changelog.md", function(data) {
+            let content = marked(data, { headerIds: false });
+            console.log(content);
+            content = content.split('<hr>');
 
-                let shards = 0;
-                json.clusters.forEach(i => {
-                    $("#clusters").append(`<div class="col-6 col-md-4 col-lg-3" style="margin: 0.5em 0; padding: 0 0.5em;"><div class="card bg-dark" style="height: 100%;"><div class="card-body"><h5 class="card-title" style="text-align: center;">Cluster ${i.cluster}</h5><br><p><b>Shard</b> ${shards}-${shards + i.shards - 1}<br><b>Guilds</b> ${numberFormat(i.guilds)}<br><b>Uptime</b> ${(i.uptime / 3600000).toFixed(2)} hr(s)<br><b>Memory</b> ${(i.ram * 1000000 / 1048576).toFixed(2)}MB</p></div></div></div>`);
-                    shards += i.shards;
-                })
+            content.forEach(i => {
+                let title = i.split('<h1>').pop().split('</h1>')[0];
+                let content = i.replace(/<h1>.*<\/h1>/g, '').replace(/h2/g, 'h5');
+                $("#content").append(`<div class="card bg-dark"><div class="card-body"><h3 class="card-title">${title}</h3><br><div class="card-text">${content}</div></div></div>`)
             });
-
-
-        function numberFormat(number) {
-            let parts = number.toString().split(".");
-            parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-            return parts.join(".");
-        }
+        })
     </script>
 </body>
 </html>
