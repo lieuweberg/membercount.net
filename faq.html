@@ -33,176 +33,6 @@
         <h2 style="text-align: center; margin: 4em 0 2em 0;">FREQUENTLY ASKED QUESTIONS</h2>
         <div class="accordion" id="accordion">
 
-            <div class="card">
-                <div class="card-header" id="heading1">
-                    <h2 class="mb-0">
-                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
-                            Why is Member Count not responding?
-                        </button>
-                    </h2>
-                </div>
-          
-                <div id="collapse1" class="collapse" aria-labelledby="heading1" data-parent="#accordion">
-                    <div class="card-body">
-                        Please check the following before asking for help.
-                        <ul>
-                            <li>Make sure the bot has <code>Read Messages</code>, <code>Send Messages</code>, and <code>Embed Links</code> permissions.</li>
-                            <li>Make sure the bot is online. Discord might be having issues, or the bot might be restarting.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-header" id="heading2">
-                    <h2 class="mb-0">
-                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
-                            Can I change the prefix?
-                        </button>
-                    </h2>
-                </div>
-                <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordion">
-                    <div class="card-body">
-                        Yes, you can. Use the command <code>m!prefix &lt;new prefix&gt;</code>. You can also mention the bot with the command. So if you forgot the prefix, you can do <code>Member Count#7205 prefix</code>.
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-header" id="heading3">
-                    <h2 class="mb-0">
-                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
-                            How do I turn off a counter?
-                        </button>
-                    </h2>
-                </div>
-                <div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#accordion">
-                    <div class="card-body">
-                        Run <code>m!counter &lt;counter&gt; &lt;on/off&gt;</code>. For the counter, choose from the following:<br><pre><code>- members (users + bots)<br>- users (humans)<br>- bots (bots)<br>- roles (total roles)<br>- channels (total channels)</code></pre><br>Premium counters:<pre><code>- role (members in a role)<br>- online (online members)<br>- offline (offline members)</code></pre><br>As for the role option, the usage is slightly different: <code>m!counter role &lt;add/remove&gt; &lt;role&gt;</code> where <code>&lt;role&gt;</code> can either be a mention or the name of the role (case sensitive).
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-header" id="heading4">
-                    <h2 class="mb-0">
-                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
-                            How do I change the counter names?
-                        </button>
-                    </h2>
-                </div>
-                <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordion">
-                    <div class="card-body">
-                        Use the command <code>m!countername &lt;counter&gt; &lt;name&gt;</code>, and include <code>{count}</code> in the name where you want the number to be at. This feature is for Patrons only. You can donate at 
-                        <a href="https://www.patreon.com/member_count">https://www.patreon.com/member_count</a>.
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-header" id="heading5">
-                    <h2 class="mb-0">
-                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
-                            What are the permissions the bot needs for all commands to work?
-                        </button>
-                    </h2>
-                </div>
-                <div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#accordion">
-                    <div class="card-body">
-                        Here's the list:<pre><code>Read Message<br>Send Messages<br>Manage Channels<br>Manage Roles<br>Attach Files<br>Connect<br>Embed Links</code></pre>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-header" id="heading6">
-                    <h2 class="mb-0">
-                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
-                            Can the bot display a count other than these options? (e.g. YouTube subscription)
-                        </button>
-                    </h2>
-                </div>
-                <div id="collapse6" class="collapse" aria-labelledby="heading6" data-parent="#accordion">
-                    <div class="card-body">
-                        As of now, those are the only counters available. If you have any suggestions, do tell us in <a href="https://discord.gg/dWMgWWw">#suggestions</a>!
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-header" id="heading7">
-                    <h2 class="mb-0">
-                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
-                            How do I prevent normal users from using the commands?
-                        </button>
-                    </h2>
-                </div>
-                <div id="collapse7" class="collapse" aria-labelledby="heading7" data-parent="#accordion">
-                    <div class="card-body">
-                        All counter related commands are already restricted to users with the <code>Administrator</code> permission. To prevent usage of other commands, restrict the bot under channel settings: <code>Permissions</code> > <code>Add Member</code> > <code>Member Count</code> > <code>Select ╳ under Send Messages</code>. Note that this will prevent you from being able to use the bot in that channel as well.
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-header" id="heading8">
-                    <h2 class="mb-0">
-                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
-                            Can I manually update the counters?
-                        </button>
-                    </h2>
-                </div>
-                <div id="collapse8" class="collapse" aria-labelledby="heading8" data-parent="#accordion">
-                    <div class="card-body">
-                        Yes, you can. Simply run <code>m!counter update</code>.
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-header" id="heading9">
-                    <h2 class="mb-0">
-                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
-                            Why are the counters duplicating/not updating?
-                        </button>
-                    </h2>
-                </div>
-                <div id="collapse9" class="collapse" aria-labelledby="heading9" data-parent="#accordion">
-                    <div class="card-body">
-                        Please ensure that the bot has the correct permissions to the counters (i.e. <code>See Voice Channel</code>, <code>Manage Channel</code> and <code>Connect</code>).
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-header" id="heading10">
-                    <h2 class="mb-0">
-                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
-                            Can I change the bot's username and avatar?
-                        </button>
-                    </h2>
-                </div>
-                <div id="collapse10" class="collapse" aria-labelledby="heading10" data-parent="#accordion">
-                    <div class="card-body">
-                        No, username and avatar are global. Changing it will affect all servers Member Count is on. You can only change the bot's nickname under <code>Manage User</code>, if you have the <code>Manage Nicknames</code> permission.
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-header" id="heading11">
-                    <h2 class="mb-0">
-                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
-                            Can I self-host the bot?
-                        </button>
-                    </h2>
-                </div>
-                <div id="collapse11" class="collapse" aria-labelledby="heading11" data-parent="#accordion">
-                    <div class="card-body">
-                        No, you can't. The bot's code is closed source.
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
 
@@ -227,6 +57,15 @@
     <script>
         $(function() {
             $("header").load("nav.html");
+        });
+
+        $.get("faq.json", function(data) {
+            let i = 1;
+
+            for (let key of data) {
+                $("#accordion").append(`<div class="card"><div class="card-header" id="heading${i}"><h2 class="mb-0"><button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse${i}" aria-expanded="false" aria-controls="collapse${i}">${key.question}</button></h2></div><div id="collapse${i}" class="collapse" aria-labelledby="heading${i}" data-parent="#accordion"><div class="card-body">${key.answer}</div></div></div>`);
+                i++;
+            }
         });
     </script>
 </body>
