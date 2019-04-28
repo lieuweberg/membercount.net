@@ -1,3 +1,38 @@
+# 28 April 2019
+
+## YouTube Counters
+
+- Woah! I can finally display the number of subscribers my channel has (zero)!
+
+- There are 3 options, subscriber count, view count and video count.
+
+- Tier 2 patrons only. Oof.
+
+- The counters update every minute.
+
+- Each server can have a maximum of 5 YouTube counters.
+
+
+## Library Update
+
+- I went ahead and made some changes to the eris library.
+
+- Memory should be better now.
+
+
+## Custom Prefix
+
+- Enabling them again.
+
+
+## Bug Fixes
+
+- Counter command for role counter will now tell you when you're missing the name argument.
+
+- Data command will now send two messages if length exceeds limit, no longer using embeds as well.
+
+---
+
 # 11 April 2019
 
 ## Online and Offline Counters
