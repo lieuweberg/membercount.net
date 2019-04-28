@@ -11,7 +11,7 @@
     {
         "command": "counter",
         "description": "The bot's most important command. With this command you can toggle counters on and off. The channels can also be updated with this command, using <code>m!counter update</code>.<br>Use <code>m!counter</code> to see a list of counters.<br><br><h6>Examples</h6><pre><code>m!counter users on   -> turns the user counter on<br>m!counter channels off   -> turns the channels counter off</code></pre>",
-        "usage": "m!counter &lt;counter&gt; &lt;on/off&gt;<br>m!counter update",
+        "usage": "m!counter &lt;counter&gt; &lt;on/off&gt;<br>m!counter role &lt;add/remove&gt; &lt;role&gt;<br>m!counter youtube &lt;add/remove&gt; &lt;subscribers/views/videos&gt; &lt;channel&gt;<br>m!counter update",
         "alias": ["channel", "count"]
     },
     {
