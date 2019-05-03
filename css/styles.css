@@ -1,3 +1,6 @@
+body::-webkit-scrollbar {
+    display: none;
+}
 
 .btn-outline-primary {
     font-weight: 500;
