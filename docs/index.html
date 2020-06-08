@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport"
+		content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+	<meta name="description" content="Documentation for the Member Count Discord bot.">
+	<meta name="author" content="lieuwe_berg#7122, CHamburr#2591">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="theme-color" content="#73c3ab">
+
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://docs.membercount.net">
+	<meta property="og:title" content="Member Count Docs">
+	<meta property="og:description" content="Documentation for the Member Count Discord bot.">
+
+	<title>Member Count Docs</title>
+
+	<!-- Other obscure stuff that makes this just work(tm) -->
+	<meta property="og:image" content="logo256.png">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css">
+
+	<style>
+		.sidebar>h1 img {
+    		width: 50px;
+		}
+
+		.search input:focus {
+			box-shadow: none !important;
+		}
+
+		@media (min-width: 768px) {
+			.markdown-section {
+				margin-left: 7vw;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<noscript>You need to enable JavaScript to run this app.</noscript>
+	<div id="app"></div>
+
+	<!-- Plugins that need config exports in the config -->
+	<script src="//unpkg.com/docsify-edit-on-github/index.js"></script>
+
+	<script>
+		window.$docsify = {
+			name: "Member Count",
+			themeColor: "#73c3ab",
+			logo: "logo256.png",
+			notFoundPage: true,
+			loadSidebar: true,
+
+			plugins: [
+				EditOnGithubPlugin.create("https://github.com/lieuweberg/membercount-web")
+			]
+		}
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+	<!-- Other plugins -->
+	<script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+	<script src="//cdn.jsdelivr.net/npm/docsify-copy-code@2"></script>
+	<script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0"></script>
+</body>
+
+</html>
