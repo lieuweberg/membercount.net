@@ -1,0 +1,9 @@
+- [Home](/)
+- [FAQ](faq)
+- [Commands](commands)
+- **Links**
+- [![](https://icongr.am/entypo/home.svg?size=20&color=c9c9c9)membercount.net](https://membercount.net)
+- [![](https://icongr.am/fontawesome/question.svg?size=20&color=c9c9c9)Support server](https://membercount.net)
+- [![](https://icongr.am/entypo/plus.svg?size=20&color=c9c9c9)Bot invite](https://membercount.net)
+- [![](https://icongr.am/simple/patreon.svg?size=20&color=c9c9c9)Patreon](https://patreon.com/member_count)
+- [![](https://icongr.am/entypo/chevron-up.svg?size=20&color=c9c9c9)Vote for the bot](https://membercount.net)

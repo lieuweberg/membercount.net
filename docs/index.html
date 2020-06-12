@@ -25,6 +25,10 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css">
 
 	<style>
+		:root {
+			--content-max-width: 100em;
+		}
+
 		.sidebar>h1 img {
     		width: 50px;
 		}
@@ -35,7 +39,7 @@
 
 		@media (min-width: 768px) {
 			.markdown-section {
-				margin-left: 7vw;
+				margin: 0 7vw;
 			}
 		}
 	</style>
@@ -53,21 +57,21 @@
 			name: "Member Count",
 			themeColor: "#73c3ab",
 			logo: "logo256.png",
-			notFoundPage: true,
-			loadSidebar: true,
+			notFoundPage: "404.md",
+			loadSidebar: "sidebar.md",
+			subMaxLevel: 2,
 
 			plugins: [
-				EditOnGithubPlugin.create("https://github.com/lieuweberg/membercount-web")
+				EditOnGithubPlugin.create("https://github.com/lieuweberg/membercount-web/docs/", null, "📝 Edit on GitHub")
 			]
 		}
 	</script>
 	<script src="https://cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0"></script>
 	<!-- Other plugins -->
 	<script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
 	<script src="//cdn.jsdelivr.net/npm/docsify-copy-code@2"></script>
 	<script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
-
-	<script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0"></script>
 </body>
 
 </html>
