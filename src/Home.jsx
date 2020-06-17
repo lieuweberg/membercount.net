@@ -18,7 +18,7 @@ return (
         <div className={styles.splashtext}>
             <img src="/img/logo256.png" width="200px" alt="Member Count"/>
             <h1>Member Count</h1>
-            <h3>Managing server stats<br/>with channel names<br/>in <span id="servercount" style={{fontWeight: "bold"}}>
+            <h3>managing server stats<br/>with channel names<br/>in <span id="servercount" style={{fontWeight: "bold"}}>
                     <StatsContext.Consumer>
                         {({stats, updateStats}) => (
                             stats.guilds

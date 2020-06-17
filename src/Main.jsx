@@ -75,7 +75,7 @@ return (
 </StatsContext.Provider>
 
 <Jumbotron fluid id="footer">
-    <p>© 2018-{new Date().getFullYear()} (っ⌒‿⌒)っ lieuwe_berg & CHamburr</p>
+    <p>© 2018-{new Date().getFullYear()} <span id="hug">(っ⌒‿⌒)っ</span> lieuwe_berg & CHamburr</p>
 </Jumbotron>
 
 </>
