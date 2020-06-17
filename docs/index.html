@@ -28,6 +28,8 @@
 		:root {
 			--content-max-width: 100em;
 			--code-inline-color: #73c3ab;
+			--base-background-color: #36393F;
+			--sidebar-background: #2F3136;
 		}
 
 		.sidebar>h1 img {
@@ -61,6 +63,9 @@
 			notFoundPage: "404.md",
 			loadSidebar: "sidebar.md",
 			subMaxLevel: 2,
+
+			// comment out in development!!!
+			routerMode: "history",
 
 			plugins: [
 				EditOnGithubPlugin.create("https://github.com/lieuweberg/membercount-web/docs/", null, "📝 Edit on GitHub")
