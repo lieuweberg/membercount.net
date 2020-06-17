@@ -1,0 +1,107 @@
+.splash {
+    width: 100%;
+    height: calc(100vh - 66px);   /* 66 pixels is the height of the navbar */
+    overflow: hidden;
+}
+
+.splashitems {
+    position: relative;
+    top: -295vh;
+}
+
+.splashtext {
+    margin: 4em 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.splashtext h1 {
+    margin: 0.5em 0;
+}
+
+.splashtext h3 {
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    line-height: 1.5em;
+    text-align: center;
+}
+
+.buttons {
+    text-align: center;
+}
+
+.buttons a {
+    display: inline-block;
+    margin: 1em;
+}
+
+.bg {
+    animation: slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #daa520 50%, #dc143c 50%);
+    opacity: 0.5;
+    width: 200%;
+    height: 100vh;
+    left: -50%;
+    right: -50%;
+    position: relative;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.bg2 {
+    animation-direction: alternate-reverse;
+    animation-duration: 4s;
+    top: -100vh;
+}
+
+.bg3 {
+    animation-duration: 5s;
+    top: -200vh;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(-25%);
+    }
+    100% {
+        transform: translateX(25%);
+    }
+}
+
+.raised {
+    box-shadow: 10px 10px 3px rgba(0, 0, 0, 0.35);
+}
+
+.features {
+    margin-top: 4em;
+}
+
+.features h2 {
+    text-align: center;
+}
+
+.features > div {
+    margin: 4em 0;
+}
+
+.gettingstarted {
+    margin-top: 4em;
+    padding: 4em 0;
+    text-align: center;
+    background-color: rgb(50, 53, 54);
+}
+
+code {
+    color: #ff5858;
+    background-color: #2c2f33;
+    padding: 0.125em;
+}
+
+body img {
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    -o-user-select: none;
+    user-select: none;          
+}

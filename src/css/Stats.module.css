@@ -1,0 +1,19 @@
+.titleandglance {
+    text-align: center;
+}
+
+.titleandglance h2 {
+    margin: 2em 0;
+}
+
+.titleandglance>div {
+    text-align: center;
+}
+
+.cards {
+    margin: 2em 0;
+}
+
+.cards>div {
+    margin-bottom: 1em;
+}
