@@ -48,13 +48,13 @@ return (
             </Card>
         </Col>
         <Col md="5">
-            <p>yay</p>
+            {/* <p>yay</p> */}
         </Col>
     </Row>
 
     <Row>
         <Col md="5">
-            <p>yay</p>
+            {/* <p>yay</p> */}
         </Col>
         <Col md="7">
             <Card bg="dark" text="white">
@@ -76,7 +76,7 @@ return (
             </Card>
         </Col>
         <Col md="5">
-            <p>yay</p>
+            {/* <p>yay</p> */}
         </Col>
     </Row>
 </Container>
