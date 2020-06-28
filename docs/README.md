@@ -5,8 +5,9 @@ Member Count is a Discord bot that adds customisable counters (server statistics
 This documentation is aimed to include all information you might need regarding the bot.
 
 Notable pages:
-- [FAQ](faq.md)
-- [Commands](commands.md)
+- [Guide](guide)
+- [FAQ](faq)
+- [Commands](commands)
 
 ---
 
@@ -28,7 +29,7 @@ Note: DO NOT add the brackets when parameters as above are indicated.
 
 - [membercount.net](https://membercount.net)
 - [Support server](https://discord.gg/dWMgWWw)
-- [Bot invite](https://membercount.net/invite?from=docs)
+- [Bot invite](https://membercount.net/invite?from=docs-home)
 - [Patreon](https://patreon.com/member_count)
 - [Vote for the bot](https://top.gg/bot/membercount/vote)
 
@@ -41,4 +42,3 @@ The documentation is located in the repo's `docs` directory.
 Every page also includes an `📝 Edit on GitHub` button at the top for quick/easy editing (e.g. if you found a typo).
 
 All contributions are appreciated, but please make sure your markdown is not messy!
-You should not make one line too long. Just go to the next line. Markdown puts everything that does not have an empty line between it after eachother.

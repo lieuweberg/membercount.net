@@ -29,7 +29,7 @@ return (
         </div>
 
         <div className={styles.buttons}>
-            <Button variant="primary" size="lg" href="/invite?from=homepage" className={styles.raised}><i className="fas fa-plus"></i> Invite Bot</Button>
+            <Button variant="primary" size="lg" href="/invite?from=splash" className={styles.raised}><i className="fas fa-plus"></i> Invite Bot</Button>
             <Button variant="success" size="lg" href="https://discord.gg/dWMgWWw" className={styles.raised}><i className="fas fa-question"></i> Join Server</Button>
         </div>
     </div>
@@ -89,8 +89,8 @@ return (
         <br/>If you need further help, you can join the <a href="https://discord.gg/dWMgWWw">support server</a> (#support).
     </p>
     <div className={styles.buttons}>
-        <Button variant="info" size="lg" href="https://docs.membercount.net/#/intro"><i className="fas fa-book"></i> Guide</Button>
-        <Button variant="info" size="lg" href="https://docs.membercount.net/#/faq"><i className="fas fa-info-circle"></i> FAQ</Button>
+        <Button variant="info" size="lg" href="https://docs.membercount.net/guide"><i className="fas fa-book"></i> Guide</Button>
+        <Button variant="info" size="lg" href="https://docs.membercount.net/faq"><i className="fas fa-info-circle"></i> FAQ</Button>
     </div>
 </Container>
 

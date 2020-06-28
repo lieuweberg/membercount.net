@@ -1,9 +1,10 @@
 - [Home](/)
 - [FAQ](faq)
+- [Guide](guide)
 - [Commands](commands)
 - **Links**
 - [![](https://icongr.am/entypo/home.svg?size=20&color=c9c9c9)membercount.net](https://membercount.net)
 - [![](https://icongr.am/fontawesome/question.svg?size=20&color=c9c9c9)Support server](https://discord.gg/dWMgWWw)
-- [![](https://icongr.am/entypo/plus.svg?size=20&color=c9c9c9)Bot invite](https://discordapp.com/api/oauth2/authorize?client_id=432533456807919639&permissions=8&scope=bot)
+- [![](https://icongr.am/entypo/plus.svg?size=20&color=c9c9c9)Bot invite](https://membercount.net/invite?from=docs-sidebar)
 - [![](https://icongr.am/simple/patreon.svg?size=20&color=c9c9c9)Patreon](https://patreon.com/member_count)
 - [![](https://icongr.am/entypo/chevron-up.svg?size=20&color=c9c9c9)Vote for the bot](https://top.gg/bot/membercount/vote)
