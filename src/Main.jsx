@@ -69,7 +69,10 @@ return (
     <Switch>
         <Route exact path="/" component={Home}/>
         <Route path="/stats" component={Stats}/>
-        <Redirect from="/invite" to="https://discordapp.com/api/oauth2/authorize?client_id=432533456807919639&permissions=8&scope=bot"/>
+        <Route path='/invite' component={() => {
+            window.location.replace('https://discordapp.com/api/oauth2/authorize?client_id=432533456807919639&permissions=8&scope=bot'); 
+            return null;
+        }}/>
         <Route component={NotFound}/>
     </Switch>
 </div>
