@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Route, Switch, Link } from "react-router-dom";
+import { Route, Switch, Link, Redirect } from "react-router-dom";
 import { Navbar, Nav, Jumbotron } from "react-bootstrap";
 
 import Home from "./Home";
@@ -69,6 +69,7 @@ return (
     <Switch>
         <Route exact path="/" component={Home}/>
         <Route path="/stats" component={Stats}/>
+        <Redirect from="/invite" to="https://discordapp.com/api/oauth2/authorize?client_id=432533456807919639&permissions=8&scope=bot"/>
         <Route component={NotFound}/>
     </Switch>
 </div>
