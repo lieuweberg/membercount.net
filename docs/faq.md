@@ -51,7 +51,7 @@ No, username and avatar are global. Changing it will affect all servers Member C
 No, you can't. The bot's code is closed source.
 
 ## My counters are frozen!!!11!1!1!!
-The counters update every 10 minutes. Discord required us to make this change.
+The counters update every 20 minutes. Discord required us to make this change and also has a global ratelimit, which means we can't update as frequently as we'd wish.
 
 ## How do a set a member goal?
 Manually create a voice channel with the same settings as the counters and name it with your goal.
