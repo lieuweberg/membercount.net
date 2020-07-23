@@ -42,7 +42,7 @@ All counter related commands are already restricted to users with the `Administr
 Please ensure that the bot has the correct permissions to the counters (i.e. `See Voice Channel`, `Manage Channel` and `Connect`).
 
 ## Can I manually update the counters?
-Yes, you can. Simply run `m!counter update`.
+No, due to the changes Discord required us to make, this is no longer a feature.
 
 ## Can I change the bot's username and avatar?
 No, username and avatar are global. Changing it will affect all servers Member Count is on. You can only change the bot's nickname (under Manage User, on mobile), if you have the `Manage Nicknames` permission.

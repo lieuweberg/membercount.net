@@ -44,7 +44,7 @@ Premium counters (tier 2):
 - youtube: `m!counter youtube <add | remove> <subscribers | views | videos> <youtube channel ID (starts with UC)>`
   - The channel ID is usually found in the url of the channel page (see *https[]()://youtube.com/channel/UCuAXFkgsw1L7xaCfnd5JJOw* for example).
   
-Although generally not advised, you can use `m!counter update` to force update your counters. Discord has ratelimits though, so you shouldn't normally use this.
+`m!counter update` was removed due to newly 
 
 #### Examples:
 - members: `m!counter members off`
