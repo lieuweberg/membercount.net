@@ -11,7 +11,7 @@ You can move this category and the counters anywhere. You are also free to renam
 Note that, due to you following along with this guide likely being the owner of your server, there are no locks displayed.
 To members that don't have the administrator permission, they will display like this:
 
-![](https://i.imgur.com/ebEkWBU.png).
+![](https://i.imgur.com/ebEkWBU.png)
 
 ### Step 2
 It's common that you may not want or need all the counters displayed by default. You can turn them off with `m!counter <counter> <on | off>`.
