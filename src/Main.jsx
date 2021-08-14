@@ -14,7 +14,7 @@ class Main extends Component {
 
         this.updateStats = async () => {
             console.log("fetching")
-            let res = await fetch("https://membercount-api.glitch.me/stats");
+            let res = await fetch("https://membercount.glitch.me/api/basic");
             let json = await res.json();
             this.setState(state => ({
                 stats: json
