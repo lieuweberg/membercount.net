@@ -70,7 +70,7 @@ return (
         <Route exact path="/" component={Home}/>
         <Route path="/stats" component={Stats}/>
         <Route path='/invite' component={() => {
-            window.location.replace('https://discordapp.com/api/oauth2/authorize?client_id=432533456807919639&permissions=8&scope=bot'); 
+            window.location.replace('https://discordapp.com/api/oauth2/authorize?client_id=432533456807919639&permissions=8&scope=bot%20applications.commands'); 
             return null;
         }}/>
         <Route component={NotFound}/>
