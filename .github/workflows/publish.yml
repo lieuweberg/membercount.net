@@ -21,3 +21,4 @@ jobs:
           projectName: membercount-docs
           directory: docs
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+          branch: production
