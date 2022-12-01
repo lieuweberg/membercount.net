@@ -60,7 +60,7 @@ return (
             <Card bg="dark" text="white">
                 <Card.Body>
                     <Card.Title as="h3">Easy Setup</Card.Title>
-                    <Card.Text>Only one command is needed for the setup of this bot, <code>m!setup</code>. This command also reverts all the settings to the default values when you want to quickly reset them.</Card.Text>
+                    <Card.Text>Only one command is needed for the setup of this bot, <code>@Member Count setup</code>. This command also reverts all the settings to the default values when you want to quickly reset them.</Card.Text>
                 </Card.Body>
             </Card>
         </Col>
@@ -71,7 +71,7 @@ return (
             <Card bg="dark" text="white">
                 <Card.Body>
                     <Card.Title as="h3">Configurable</Card.Title>
-                    <Card.Text>Want to turn a counter off? Want to change the name of a counter? Feel free to do so! All of the commands can be viewed from the help menu, with the command <code>m!help</code>, or on the <a href="https://docs.membercount.net">docs</a>.</Card.Text>
+                    <Card.Text>Want to turn a counter off? Want to change the name of a counter? Feel free to do so! All of the commands can be viewed from the help menu, with the command <code>@Member Count help</code>, or on the <a href="https://docs.membercount.net">docs</a>.</Card.Text>
                 </Card.Body>
             </Card>
         </Col>
